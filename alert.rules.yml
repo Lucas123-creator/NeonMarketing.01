@@ -1,0 +1,27 @@
+groups:
+- name: neonhub_alerts
+  rules:
+  - alert: NoTriggersFired
+    expr: increase(triggers_fired_total[5m]) == 0
+    for: 5m
+    labels:
+      severity: critical
+    annotations:
+      summary: "No triggers fired in the last 5 minutes."
+      description: "Check if the system is stuck or not processing leads."
+  - alert: UnprocessedLeads
+    expr: unprocessed_leads_total > 10
+    for: 10m
+    labels:
+      severity: warning
+    annotations:
+      summary: "High number of unprocessed leads."
+      description: "There are more than 10 unprocessed leads."
+  - alert: HighErrorRate
+    expr: increase(agent_errors_total[5m]) > 5
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "High agent error rate."
+      description: "More than 5 errors in the last 5 minutes." 

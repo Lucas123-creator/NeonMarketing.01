@@ -1,0 +1,45 @@
+template_id: mobile_demo_whatsapp
+name: Demo WhatsApp Outreach
+variants:
+  - variant_id: en_1
+    lang: en
+    channel: whatsapp
+    personas: ["Retail Buyer", "Distributor"]
+    tone: informal
+    subject: ""
+    body: "👋 Hi {{first_name}}! {{product}} is hot right now! Use {{offer_code}} for a deal. Tap to see: {{short_url}}"
+  - variant_id: en_2
+    lang: en
+    channel: whatsapp
+    personas: ["Event Planner"]
+    tone: friendly
+    subject: ""
+    body: "Hey {{first_name}}, want to impress your guests? Try {{product}}! Save with {{offer_code}}. 👉 {{short_url}}"
+  - variant_id: ar_1
+    lang: ar
+    channel: whatsapp
+    personas: ["Retail Buyer"]
+    tone: informal
+    subject: ""
+    body: "👋 مرحباً {{first_name}}! {{product}} متوفر الآن! استخدم {{offer_code}} للخصم. اضغط هنا: {{short_url}}"
+  - variant_id: fr_1
+    lang: fr
+    channel: whatsapp
+    personas: ["Distributor"]
+    tone: informal
+    subject: ""
+    body: "Coucou {{first_name}} ! {{product}} en promo ! Code: {{offer_code}}. 👉 {{short_url}}"
+  - variant_id: de_1
+    lang: de
+    channel: whatsapp
+    personas: ["Retail Buyer"]
+    tone: informal
+    subject: ""
+    body: "Hallo {{first_name}}! {{product}} jetzt im Angebot! Code: {{offer_code}}. Mehr Info: {{short_url}}"
+  - variant_id: universal
+    lang: en
+    channel: whatsapp
+    personas: []
+    tone: universal
+    subject: ""
+    body: "Hi {{first_name}}, check out {{product}}! Use {{offer_code}}. {{short_url}}" 

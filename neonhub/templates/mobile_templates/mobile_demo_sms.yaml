@@ -1,0 +1,45 @@
+template_id: mobile_demo_sms
+name: Demo SMS Outreach
+variants:
+  - variant_id: en_1
+    lang: en
+    channel: sms
+    personas: ["Retail Buyer", "Distributor"]
+    tone: informal
+    subject: ""
+    body: "Hey {{first_name}}! 🎉 Quick heads up: {{product}} is on sale! Use code {{offer_code}}. Tap! {{short_url}}"
+  - variant_id: en_2
+    lang: en
+    channel: sms
+    personas: ["Event Planner"]
+    tone: friendly
+    subject: ""
+    body: "Hi {{first_name}}, want to wow your guests? Try {{product}}! Save with {{offer_code}}. Shop! {{short_url}}"
+  - variant_id: ar_1
+    lang: ar
+    channel: sms
+    personas: ["Retail Buyer"]
+    tone: informal
+    subject: ""
+    body: "مرحباً {{first_name}}! 🎉 عرض خاص على {{product}}. استخدم الرمز {{offer_code}}. اضغط هنا! {{short_url}}"
+  - variant_id: fr_1
+    lang: fr
+    channel: sms
+    personas: ["Distributor"]
+    tone: informal
+    subject: ""
+    body: "Salut {{first_name}} ! 🎉 Promo sur {{product}}. Code: {{offer_code}}. Plus d'info: {{short_url}}"
+  - variant_id: de_1
+    lang: de
+    channel: sms
+    personas: ["Retail Buyer"]
+    tone: informal
+    subject: ""
+    body: "Hallo {{first_name}}! 🎉 {{product}} im Angebot! Code: {{offer_code}}. Mehr Info: {{short_url}}"
+  - variant_id: universal
+    lang: en
+    channel: sms
+    personas: []
+    tone: universal
+    subject: ""
+    body: "Hi {{first_name}}, check out {{product}}! Use {{offer_code}}. {{short_url}}" 

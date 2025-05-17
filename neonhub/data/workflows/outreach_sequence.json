@@ -1,0 +1,113 @@
+{
+    "workflow_id": "distributor_outreach_v1",
+    "name": "Distributor Outreach Sequence",
+    "description": "Automated sequence for reaching out to potential distributors",
+    "version": "1.0",
+    "steps": [
+        {
+            "step_id": "initial_outreach",
+            "name": "Initial Outreach",
+            "template": "initial_outreach",
+            "delay_days": 0,
+            "conditions": {
+                "min_confidence_score": 0.6,
+                "required_fields": ["company_name", "contact_info.email"]
+            },
+            "personalization": {
+                "use_ai": true,
+                "custom_fields": [
+                    "company_name",
+                    "industry",
+                    "location"
+                ]
+            }
+        },
+        {
+            "step_id": "first_follow_up",
+            "name": "First Follow-up",
+            "template": "follow_up",
+            "delay_days": 3,
+            "conditions": {
+                "previous_step": "initial_outreach",
+                "no_response": true
+            },
+            "personalization": {
+                "use_ai": true,
+                "custom_fields": [
+                    "company_name",
+                    "location"
+                ]
+            }
+        },
+        {
+            "step_id": "second_follow_up",
+            "name": "Second Follow-up",
+            "template": "follow_up",
+            "delay_days": 5,
+            "conditions": {
+                "previous_step": "first_follow_up",
+                "no_response": true
+            },
+            "personalization": {
+                "use_ai": true,
+                "custom_fields": [
+                    "company_name",
+                    "location"
+                ]
+            }
+        },
+        {
+            "step_id": "final_outreach",
+            "name": "Final Outreach",
+            "template": "final_outreach",
+            "delay_days": 7,
+            "conditions": {
+                "previous_step": "second_follow_up",
+                "no_response": true
+            },
+            "personalization": {
+                "use_ai": true,
+                "custom_fields": [
+                    "company_name",
+                    "location"
+                ]
+            }
+        }
+    ],
+    "success_criteria": {
+        "response_types": [
+            "positive_response",
+            "meeting_scheduled",
+            "information_requested"
+        ],
+        "min_response_rate": 0.15
+    },
+    "tracking": {
+        "metrics": [
+            "open_rate",
+            "click_rate",
+            "response_rate",
+            "conversion_rate"
+        ],
+        "events": [
+            "email_sent",
+            "email_opened",
+            "link_clicked",
+            "response_received"
+        ]
+    },
+    "settings": {
+        "max_retries": 3,
+        "timeout_seconds": 30,
+        "rate_limit": {
+            "emails_per_hour": 50,
+            "emails_per_day": 200
+        },
+        "timezone": "UTC",
+        "working_hours": {
+            "start": "09:00",
+            "end": "17:00",
+            "days": ["monday", "tuesday", "wednesday", "thursday", "friday"]
+        }
+    }
+} 

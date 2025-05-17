@@ -1,0 +1,6 @@
+variants:
+  - variant_id: v1
+    language: en
+    subject: "Welcome, {{ first_name }}!"
+    body: "Hello {{ first_name }}, welcome to NeonHub! Get started here: https://example.com/start"
+    tone: formal 

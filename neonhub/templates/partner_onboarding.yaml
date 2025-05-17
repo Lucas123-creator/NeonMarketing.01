@@ -1,0 +1,6 @@
+variants:
+  - variant_id: v1
+    language: en
+    subject: "Welcome, {{ partner_name }}! Let's Partner Up"
+    body: "Hi {{ partner_name }},\nWe're excited to invite you to join NeonHub's partner program. See our onboarding deck: https://example.com/partner-deck\nReview terms: https://example.com/terms\nReady to start? Contact us!"
+    tone: formal 

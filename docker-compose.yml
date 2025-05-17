@@ -1,0 +1,53 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    container_name: neonhub_app
+    env_file:
+      - .env.prod
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+      - prometheus
+    networks:
+      - neonhub_net
+  redis:
+    image: redis:7-alpine
+    container_name: neonhub_redis
+    ports:
+      - "6379:6379"
+    networks:
+      - neonhub_net
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: neonhub_prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - neonhub_net
+  grafana:
+    image: grafana/grafana:latest
+    container_name: neonhub_grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+    networks:
+      - neonhub_net
+  frontend:
+    build:
+      context: ./ui
+      dockerfile: Dockerfile
+    container_name: neonhub_frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - neonhub_net
+networks:
+  neonhub_net:
+    driver: bridge 

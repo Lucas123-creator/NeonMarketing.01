@@ -1,0 +1,115 @@
+template_id: "demo_outreach_email"
+name: "Initial Outreach Email"
+description: "First contact email for potential distributors"
+languages: ["en", "es", "fr", "de"]
+target_personas: ["Event Planner", "Retail Buyer", "Distributor"]
+variants:
+  - id: "variant_1"
+    name: "Direct Value Proposition"
+    language: "en"
+    segment_score: 0.7
+    use_ai_personalization: true
+    content:
+      subject: "Transform Your Business with {{company_name}}'s Neon Signs"
+      body: |
+        Dear {{first_name}},
+        
+        I noticed {{company_name}}'s impressive work in {{industry}} and thought you might be interested in our premium neon signs.
+        
+        Our signs have helped businesses like yours:
+        - Increase foot traffic by up to 40%
+        - Create memorable brand experiences
+        - Stand out in competitive markets
+        
+        Would you be open to a 15-minute call to discuss how we could help {{company_name}} achieve similar results?
+        
+        Best regards,
+        {{sender_name}}
+        
+  - id: "variant_2"
+    name: "Problem-Solution Approach"
+    language: "en"
+    segment_score: 0.5
+    use_ai_personalization: true
+    content:
+      subject: "Solving {{industry}}'s Visibility Challenges with Neon Signs"
+      body: |
+        Hi {{first_name}},
+        
+        Many {{industry}} businesses struggle with:
+        - Low visibility in crowded markets
+        - Difficulty creating memorable brand experiences
+        - Limited ways to attract new customers
+        
+        At {{company_name}}, we've helped businesses overcome these challenges with our custom neon signs.
+        
+        Would you be interested in seeing some examples of how we've helped similar businesses?
+        
+        Regards,
+        {{sender_name}}
+        
+  - id: "variant_3"
+    name: "Spanish Version"
+    language: "es"
+    segment_score: 0.7
+    use_ai_personalization: true
+    content:
+      subject: "Transforma tu Negocio con Letreros de Neón de {{company_name}}"
+      body: |
+        Estimado/a {{first_name}},
+        
+        He notado el impresionante trabajo de {{company_name}} en {{industry}} y pensé que podría interesarle nuestros letreros de neón premium.
+        
+        Nuestros letreros han ayudado a negocios como el suyo a:
+        - Aumentar el tráfico peatonal hasta en un 40%
+        - Crear experiencias de marca memorables
+        - Destacar en mercados competitivos
+        
+        ¿Le gustaría programar una llamada de 15 minutos para discutir cómo podríamos ayudar a {{company_name}} a lograr resultados similares?
+        
+        Saludos cordiales,
+        {{sender_name}}
+        
+  - id: "variant_4"
+    name: "French Version"
+    language: "fr"
+    segment_score: 0.7
+    use_ai_personalization: true
+    content:
+      subject: "Transformez Votre Entreprise avec les Enseignes au Néon de {{company_name}}"
+      body: |
+        Cher/Chère {{first_name}},
+        
+        J'ai remarqué le travail impressionnant de {{company_name}} dans {{industry}} et j'ai pensé que vous pourriez être intéressé par nos enseignes au néon haut de gamme.
+        
+        Nos enseignes ont aidé des entreprises comme la vôtre à :
+        - Augmenter le trafic piéton jusqu'à 40%
+        - Créer des expériences de marque mémorables
+        - Se démarquer sur des marchés concurrentiels
+        
+        Seriez-vous ouvert à un appel de 15 minutes pour discuter de la façon dont nous pourrions aider {{company_name}} à obtenir des résultats similaires ?
+        
+        Cordialement,
+        {{sender_name}}
+        
+  - id: "variant_5"
+    name: "German Version"
+    language: "de"
+    segment_score: 0.7
+    use_ai_personalization: true
+    content:
+      subject: "Transformieren Sie Ihr Unternehmen mit Neon-Schildern von {{company_name}}"
+      body: |
+        Sehr geehrte/r {{first_name}},
+        
+        Ich habe die beeindruckende Arbeit von {{company_name}} in {{industry}} bemerkt und dachte, Sie könnten an unseren Premium-Neon-Schildern interessiert sein.
+        
+        Unsere Schilder haben Unternehmen wie Ihres dabei geholfen:
+        - Den Fußgängerverkehr um bis zu 40% zu steigern
+        - Unvergessliche Markenerlebnisse zu schaffen
+        - Sich auf wettbewerbsintensiven Märkten abzuheben
+        
+        Wären Sie offen für ein 15-minütiges Gespräch, um zu besprechen, wie wir {{company_name}} zu ähnlichen Ergebnissen verhelfen könnten?
+        
+        Mit freundlichen Grüßen,
+        {{sender_name}} 

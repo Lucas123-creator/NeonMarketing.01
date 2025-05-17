@@ -1,0 +1,139 @@
+personas:
+  event_planner:
+    name: "Event Planner"
+    description: "Professional responsible for organizing and managing events"
+    traits:
+      - "Focused on creating memorable experiences"
+      - "Values unique and eye-catching decor"
+      - "Needs flexible and customizable solutions"
+      - "Budget-conscious but quality-focused"
+    content_preferences:
+      - "Emphasize visual impact"
+      - "Highlight customization options"
+      - "Focus on event-specific benefits"
+      - "Include case studies of successful events"
+    pain_points:
+      - "Finding unique decor elements"
+      - "Managing event budgets"
+      - "Creating Instagram-worthy moments"
+      - "Standing out from competitors"
+      
+  retail_buyer:
+    name: "Retail Buyer"
+    description: "Professional responsible for purchasing products for retail stores"
+    traits:
+      - "Data-driven decision maker"
+      - "Focused on ROI and sales impact"
+      - "Needs reliable suppliers"
+      - "Values product quality and durability"
+    content_preferences:
+      - "Include sales statistics"
+      - "Highlight product quality"
+      - "Focus on business benefits"
+      - "Provide pricing and terms"
+    pain_points:
+      - "Finding reliable suppliers"
+      - "Managing inventory costs"
+      - "Meeting sales targets"
+      - "Competing with online retailers"
+      
+  distributor:
+    name: "Distributor"
+    description: "Business that purchases and resells products to retailers"
+    traits:
+      - "Volume-focused"
+      - "Needs consistent supply"
+      - "Values long-term partnerships"
+      - "Price-sensitive"
+    content_preferences:
+      - "Emphasize supply chain reliability"
+      - "Highlight partnership benefits"
+      - "Focus on volume discounts"
+      - "Include market demand data"
+    pain_points:
+      - "Managing inventory levels"
+      - "Finding reliable manufacturers"
+      - "Meeting customer demands"
+      - "Maintaining profit margins"
+      
+  restaurant_owner:
+    name: "Restaurant Owner"
+    description: "Owner or manager of a restaurant business"
+    traits:
+      - "Focused on customer experience"
+      - "Values ambiance and atmosphere"
+      - "Needs durable solutions"
+      - "Budget-conscious"
+    content_preferences:
+      - "Highlight ambiance benefits"
+      - "Focus on durability"
+      - "Include restaurant case studies"
+      - "Emphasize customer attraction"
+    pain_points:
+      - "Creating unique atmosphere"
+      - "Managing operating costs"
+      - "Attracting customers"
+      - "Standing out from competitors"
+      
+  hotel_manager:
+    name: "Hotel Manager"
+    description: "Manager of a hotel or hospitality business"
+    traits:
+      - "Focused on guest experience"
+      - "Values brand consistency"
+      - "Needs reliable solutions"
+      - "Quality-focused"
+    content_preferences:
+      - "Emphasize guest experience"
+      - "Highlight brand alignment"
+      - "Focus on reliability"
+      - "Include hospitality case studies"
+    pain_points:
+      - "Creating memorable guest experiences"
+      - "Maintaining brand standards"
+      - "Managing property aesthetics"
+      - "Competing with other hotels"
+      
+content_rules:
+  tone:
+    event_planner: "Creative and inspiring"
+    retail_buyer: "Professional and data-driven"
+    distributor: "Business-focused and partnership-oriented"
+    restaurant_owner: "Warm and inviting"
+    hotel_manager: "Luxurious and professional"
+    
+  length:
+    event_planner: "Medium to long"
+    retail_buyer: "Concise and direct"
+    distributor: "Detailed and comprehensive"
+    restaurant_owner: "Medium"
+    hotel_manager: "Professional and detailed"
+    
+  call_to_action:
+    event_planner: "Schedule a design consultation"
+    retail_buyer: "Request a quote"
+    distributor: "Start a partnership discussion"
+    restaurant_owner: "Book a site visit"
+    hotel_manager: "Schedule a property assessment"
+    
+  key_metrics:
+    event_planner:
+      - "Visual impact"
+      - "Customization options"
+      - "Installation flexibility"
+    retail_buyer:
+      - "ROI"
+      - "Product quality"
+      - "Lead time"
+    distributor:
+      - "Volume discounts"
+      - "Supply reliability"
+      - "Partnership terms"
+    restaurant_owner:
+      - "Ambiance impact"
+      - "Durability"
+      - "Installation time"
+    hotel_manager:
+      - "Guest satisfaction"
+      - "Brand alignment"
+      - "Maintenance requirements" 
