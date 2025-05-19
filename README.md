@@ -1,4 +1,4 @@
-# NeonHub AI-Powered Growth Ecosystem
+# Neon Marketing Project
 
 An autonomous marketing system for B2B and B2C outreach across email, social media, and digital sales channels.
 
